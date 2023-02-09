@@ -20,10 +20,6 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'notFound',
-    component: NotFoundComponent,
-  },
-  {
     path: 'category',
     component: CategoryComponent,
   },
@@ -50,6 +46,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
+  },
+  {
+    path: '**', //404
+    component: NotFoundComponent,
   },
 ];
 
