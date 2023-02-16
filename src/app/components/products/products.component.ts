@@ -46,6 +46,9 @@ export class ProductsComponent {
     this.productsService.getOne(id).subscribe(
       (data) => {
         this.productChosen = data;
+        console.log(
+          'this.productChosen = data' + this.productChosen + '  ' + data
+        );
         this.statusDetail = 'success';
       },
       (errorMsg) => {
